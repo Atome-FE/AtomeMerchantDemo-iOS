@@ -1,0 +1,463 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A29237E62510ABD2007770F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29237E52510ABD2007770F3 /* AppDelegate.swift */; };
+		A29237E82510ABD3007770F3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29237E72510ABD3007770F3 /* SceneDelegate.swift */; };
+		A29237EA2510ABD3007770F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29237E92510ABD3007770F3 /* ViewController.swift */; };
+		A29237ED2510ABD3007770F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A29237EB2510ABD3007770F3 /* Main.storyboard */; };
+		A29237EF2510ABD5007770F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A29237EE2510ABD5007770F3 /* Assets.xcassets */; };
+		A29237F22510ABD5007770F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A29237F02510ABD5007770F3 /* LaunchScreen.storyboard */; };
+		A29237FB2510B165007770F3 /* NetworkRequester in Frameworks */ = {isa = PBXBuildFile; productRef = A29237FA2510B165007770F3 /* NetworkRequester */; };
+		A29237FE2510B3A5007770F3 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A29237FD2510B3A5007770F3 /* SnapKit */; };
+		A29238002510B517007770F3 /* CustumActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29237FF2510B517007770F3 /* CustumActionButton.swift */; };
+		A29238032511B5B4007770F3 /* ConfirmOrderRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29238022511B5B4007770F3 /* ConfirmOrderRequest.swift */; };
+		A299DF702521B5BF00F07DDC /* AtomeSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A299DF6C2521B54300F07DDC /* AtomeSDK.framework */; };
+		FDA8E8E68A63BB0A7268EBC5 /* libPods-AtomeMerchantDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ECE80E5BE60542C55F1D367 /* libPods-AtomeMerchantDemo.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		60A00AE61002FD00F602E065 /* Pods-AtomeMerchantDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AtomeMerchantDemo.debug.xcconfig"; path = "Target Support Files/Pods-AtomeMerchantDemo/Pods-AtomeMerchantDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		6C2621994DFDAE5E72260875 /* Pods-AtomeMerchantDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AtomeMerchantDemo.release.xcconfig"; path = "Target Support Files/Pods-AtomeMerchantDemo/Pods-AtomeMerchantDemo.release.xcconfig"; sourceTree = "<group>"; };
+		8ECE80E5BE60542C55F1D367 /* libPods-AtomeMerchantDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AtomeMerchantDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A29237E22510ABD2007770F3 /* AtomeMerchantDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AtomeMerchantDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A29237E52510ABD2007770F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A29237E72510ABD3007770F3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A29237E92510ABD3007770F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A29237EC2510ABD3007770F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A29237EE2510ABD5007770F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A29237F12510ABD5007770F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A29237F32510ABD5007770F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A29237FF2510B517007770F3 /* CustumActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustumActionButton.swift; sourceTree = "<group>"; };
+		A29238012510B750007770F3 /* AtomeMerchantDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AtomeMerchantDemo.entitlements; sourceTree = "<group>"; };
+		A29238022511B5B4007770F3 /* ConfirmOrderRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmOrderRequest.swift; sourceTree = "<group>"; };
+		A299DF6C2521B54300F07DDC /* AtomeSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AtomeSDK.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A29237DF2510ABD2007770F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A29237FB2510B165007770F3 /* NetworkRequester in Frameworks */,
+				A29237FE2510B3A5007770F3 /* SnapKit in Frameworks */,
+				A299DF702521B5BF00F07DDC /* AtomeSDK.framework in Frameworks */,
+				FDA8E8E68A63BB0A7268EBC5 /* libPods-AtomeMerchantDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1CCE3B1A2E166406DEB0FF5A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8ECE80E5BE60542C55F1D367 /* libPods-AtomeMerchantDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7DF54976F2CFDF569DAAC794 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				60A00AE61002FD00F602E065 /* Pods-AtomeMerchantDemo.debug.xcconfig */,
+				6C2621994DFDAE5E72260875 /* Pods-AtomeMerchantDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A29237D92510ABD2007770F3 = {
+			isa = PBXGroup;
+			children = (
+				A29237E42510ABD2007770F3 /* AtomeMerchantDemo */,
+				A29237E32510ABD2007770F3 /* Products */,
+				7DF54976F2CFDF569DAAC794 /* Pods */,
+				1CCE3B1A2E166406DEB0FF5A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A29237E32510ABD2007770F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A29237E22510ABD2007770F3 /* AtomeMerchantDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A29237E42510ABD2007770F3 /* AtomeMerchantDemo */ = {
+			isa = PBXGroup;
+			children = (
+				A29238012510B750007770F3 /* AtomeMerchantDemo.entitlements */,
+				A29237E52510ABD2007770F3 /* AppDelegate.swift */,
+				A29237E72510ABD3007770F3 /* SceneDelegate.swift */,
+				A29237E92510ABD3007770F3 /* ViewController.swift */,
+				A29238022511B5B4007770F3 /* ConfirmOrderRequest.swift */,
+				A29237FF2510B517007770F3 /* CustumActionButton.swift */,
+				A299DF6C2521B54300F07DDC /* AtomeSDK.framework */,
+				A29237EB2510ABD3007770F3 /* Main.storyboard */,
+				A29237EE2510ABD5007770F3 /* Assets.xcassets */,
+				A29237F02510ABD5007770F3 /* LaunchScreen.storyboard */,
+				A29237F32510ABD5007770F3 /* Info.plist */,
+			);
+			path = AtomeMerchantDemo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A29237E12510ABD2007770F3 /* AtomeMerchantDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A29237F62510ABD5007770F3 /* Build configuration list for PBXNativeTarget "AtomeMerchantDemo" */;
+			buildPhases = (
+				EB44576C3636D79A786C1AA8 /* [CP] Check Pods Manifest.lock */,
+				A29237DE2510ABD2007770F3 /* Sources */,
+				A29237DF2510ABD2007770F3 /* Frameworks */,
+				A29237E02510ABD2007770F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AtomeMerchantDemo;
+			packageProductDependencies = (
+				A29237FA2510B165007770F3 /* NetworkRequester */,
+				A29237FD2510B3A5007770F3 /* SnapKit */,
+			);
+			productName = AtomeMerchantDemo;
+			productReference = A29237E22510ABD2007770F3 /* AtomeMerchantDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A29237DA2510ABD2007770F3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = boye;
+				TargetAttributes = {
+					A29237E12510ABD2007770F3 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+				};
+			};
+			buildConfigurationList = A29237DD2510ABD2007770F3 /* Build configuration list for PBXProject "AtomeMerchantDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A29237D92510ABD2007770F3;
+			packageReferences = (
+				A29237F92510B165007770F3 /* XCRemoteSwiftPackageReference "NetworkRequester" */,
+				A29237FC2510B3A5007770F3 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
+			productRefGroup = A29237E32510ABD2007770F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A29237E12510ABD2007770F3 /* AtomeMerchantDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A29237E02510ABD2007770F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A29237F22510ABD5007770F3 /* LaunchScreen.storyboard in Resources */,
+				A29237EF2510ABD5007770F3 /* Assets.xcassets in Resources */,
+				A29237ED2510ABD3007770F3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EB44576C3636D79A786C1AA8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AtomeMerchantDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A29237DE2510ABD2007770F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A29237EA2510ABD3007770F3 /* ViewController.swift in Sources */,
+				A29237E62510ABD2007770F3 /* AppDelegate.swift in Sources */,
+				A29238002510B517007770F3 /* CustumActionButton.swift in Sources */,
+				A29237E82510ABD3007770F3 /* SceneDelegate.swift in Sources */,
+				A29238032511B5B4007770F3 /* ConfirmOrderRequest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A29237EB2510ABD3007770F3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A29237EC2510ABD3007770F3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A29237F02510ABD5007770F3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A29237F12510ABD5007770F3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A29237F42510ABD5007770F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A29237F52510ABD5007770F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A29237F72510ABD5007770F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60A00AE61002FD00F602E065 /* Pods-AtomeMerchantDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AtomeMerchantDemo/AtomeMerchantDemo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P948MCUQ2Y;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AtomeMerchantDemo",
+				);
+				INFOPLIST_FILE = AtomeMerchantDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.atome.merchant.demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A29237F82510ABD5007770F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C2621994DFDAE5E72260875 /* Pods-AtomeMerchantDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AtomeMerchantDemo/AtomeMerchantDemo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P948MCUQ2Y;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AtomeMerchantDemo",
+				);
+				INFOPLIST_FILE = AtomeMerchantDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.atome.merchant.demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A29237DD2510ABD2007770F3 /* Build configuration list for PBXProject "AtomeMerchantDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A29237F42510ABD5007770F3 /* Debug */,
+				A29237F52510ABD5007770F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A29237F62510ABD5007770F3 /* Build configuration list for PBXNativeTarget "AtomeMerchantDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A29237F72510ABD5007770F3 /* Debug */,
+				A29237F82510ABD5007770F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A29237F92510B165007770F3 /* XCRemoteSwiftPackageReference "NetworkRequester" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/houboye/NetworkRequester.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.1;
+			};
+		};
+		A29237FC2510B3A5007770F3 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A29237FA2510B165007770F3 /* NetworkRequester */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A29237F92510B165007770F3 /* XCRemoteSwiftPackageReference "NetworkRequester" */;
+			productName = NetworkRequester;
+		};
+		A29237FD2510B3A5007770F3 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A29237FC2510B3A5007770F3 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A29237DA2510ABD2007770F3 /* Project object */;
+}

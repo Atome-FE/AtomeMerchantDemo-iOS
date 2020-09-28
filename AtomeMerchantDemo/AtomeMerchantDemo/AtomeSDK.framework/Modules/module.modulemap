@@ -1,0 +1,11 @@
+framework module AtomeSDK {
+  umbrella header "AtomeSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module AtomeSDK.Swift {
+    header "AtomeSDK-Swift.h"
+    requires objc
+}
