@@ -10,6 +10,10 @@ import UIKit
 import NetworkRequester
 
 class ConfirmOrderRequest: NetworkRequester {
+    var paymentResultUrl: String = ""
+    var amount: Int = demoAmount
+    var currency: String = demoCurrency
+    
     override func baseUrl() -> String {
         return "https://demo-app-test.apaylater.net"
     }
@@ -23,7 +27,7 @@ class ConfirmOrderRequest: NetworkRequester {
     }
     
     override func requestArgument() -> Any? {
-        return ["currency": "SGD", "amount": 1234, "paymentResultUrl": "https://appdemo.apaylater.net/"]
+        return ["currency": currency, "amount": amount, "paymentResultUrl": paymentResultUrl]
     }
     
     override func parameterEncoder() -> RequestParameterEncoder {

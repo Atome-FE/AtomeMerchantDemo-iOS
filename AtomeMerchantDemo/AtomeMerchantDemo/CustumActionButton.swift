@@ -8,8 +8,9 @@
 
 import UIKit
 
+
 class CustumActionButton: UIButton {
-    static let size = CGSize(width: 150, height: 60)
+    static let size = CGSize(width: 270, height: 48)
     
     init(title: String) {
         super.init(frame: .zero)

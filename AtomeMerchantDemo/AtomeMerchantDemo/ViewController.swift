@@ -10,10 +10,15 @@ import UIKit
 import SnapKit
 import AtomeSDK
 
+let demoAmount: Int = 1234
+let demoCurrency: String = "SGD"
+
 class ViewController: UIViewController {
     
+    private let textField = UITextField()
     private let confirmOrderButton = CustumActionButton(title: "Confirm Order")
     private let openAppButton = CustumActionButton(title: "Open Atome")
+    private let responseLabel = UITextView()
     private let request = ConfirmOrderRequest()
     private var appPaymentUrl: String?
     
@@ -23,19 +28,38 @@ class ViewController: UIViewController {
     }
     
     private func setupViews() {
+        view.addSubview(textField)
+        textField.placeholder = "Please input your custum URL"
+        textField.text = "https://appdemo.apaylater.net/"
+        textField.borderStyle = .roundedRect
+        textField.snp.makeConstraints { (make) in
+            make.leading.equalToSuperview().offset(30)
+            make.trailing.equalToSuperview().offset(-30)
+            make.top.equalToSuperview().offset(100)
+            make.height.equalTo(45)
+        }
+        
         view.addSubview(confirmOrderButton)
         confirmOrderButton.snp.makeConstraints { (make) in
-            make.bottom.equalTo(view.snp.centerY).offset(-40)
+            make.top.equalTo(textField.snp.bottom).offset(60)
             make.centerX.equalToSuperview()
             make.size.equalTo(CustumActionButton.size)
         }
         
         view.addSubview(openAppButton)
-        openAppButton.isHidden = true
         openAppButton.snp.makeConstraints { (make) in
             make.centerX.equalToSuperview()
-            make.top.equalTo(view.snp.centerY).offset(40)
+            make.top.equalTo(confirmOrderButton.snp.bottom).offset(40)
             make.size.equalTo(CustumActionButton.size)
+        }
+        
+        view.addSubview(responseLabel)
+        responseLabel.isEditable = false
+        responseLabel.snp.makeConstraints { (make) in
+            make.leading.equalTo(30)
+            make.trailing.equalTo(-30)
+            make.top.equalTo(openAppButton.snp.bottom).offset(60)
+            make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom).offset(-40)
         }
         
         confirmOrderButton.addTarget(self, action: #selector(confirmOrder), for: .touchUpInside)
@@ -43,9 +67,16 @@ class ViewController: UIViewController {
     }
     
     @objc func confirmOrder() {
+        guard let url = textField.text else {
+            debugPrint("url cant be nil")
+            return
+        }
+        
+        request.paymentResultUrl = url
         request.setCompletionBlock(success: { [weak self] (request) in
             guard let self = self else { return }
             self.openAppButton.isHidden = false
+            self.responseLabel.text = request.responseString
             guard let dict = request.responseObject as? [String: Any],
                 let datas = dict["data"] as? [String: Any],
                 let paymentURL = datas["appPaymentUrl"] as? String else {
