@@ -17,7 +17,7 @@
 		A29237FE2510B3A5007770F3 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A29237FD2510B3A5007770F3 /* SnapKit */; };
 		A29238002510B517007770F3 /* CustumActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29237FF2510B517007770F3 /* CustumActionButton.swift */; };
 		A29238032511B5B4007770F3 /* ConfirmOrderRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29238022511B5B4007770F3 /* ConfirmOrderRequest.swift */; };
-		A299DF702521B5BF00F07DDC /* AtomeSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A299DF6C2521B54300F07DDC /* AtomeSDK.framework */; };
+		A299DF7D2521BF8B00F07DDC /* AtomeSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A299DF7C2521BF8A00F07DDC /* AtomeSDK.framework */; };
 		FDA8E8E68A63BB0A7268EBC5 /* libPods-AtomeMerchantDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ECE80E5BE60542C55F1D367 /* libPods-AtomeMerchantDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -36,7 +36,7 @@
 		A29237FF2510B517007770F3 /* CustumActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustumActionButton.swift; sourceTree = "<group>"; };
 		A29238012510B750007770F3 /* AtomeMerchantDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AtomeMerchantDemo.entitlements; sourceTree = "<group>"; };
 		A29238022511B5B4007770F3 /* ConfirmOrderRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmOrderRequest.swift; sourceTree = "<group>"; };
-		A299DF6C2521B54300F07DDC /* AtomeSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AtomeSDK.framework; sourceTree = "<group>"; };
+		A299DF7C2521BF8A00F07DDC /* AtomeSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AtomeSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +46,7 @@
 			files = (
 				A29237FB2510B165007770F3 /* NetworkRequester in Frameworks */,
 				A29237FE2510B3A5007770F3 /* SnapKit in Frameworks */,
-				A299DF702521B5BF00F07DDC /* AtomeSDK.framework in Frameworks */,
+				A299DF7D2521BF8B00F07DDC /* AtomeSDK.framework in Frameworks */,
 				FDA8E8E68A63BB0A7268EBC5 /* libPods-AtomeMerchantDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -98,7 +98,7 @@
 				A29237E92510ABD3007770F3 /* ViewController.swift */,
 				A29238022511B5B4007770F3 /* ConfirmOrderRequest.swift */,
 				A29237FF2510B517007770F3 /* CustumActionButton.swift */,
-				A299DF6C2521B54300F07DDC /* AtomeSDK.framework */,
+				A299DF7C2521BF8A00F07DDC /* AtomeSDK.framework */,
 				A29237EB2510ABD3007770F3 /* Main.storyboard */,
 				A29237EE2510ABD5007770F3 /* Assets.xcassets */,
 				A29237F02510ABD5007770F3 /* LaunchScreen.storyboard */,
