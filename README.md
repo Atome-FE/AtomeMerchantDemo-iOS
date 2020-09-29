@@ -25,3 +25,7 @@ AtomeManager.shared.handPaymentURL(url)
 ```swift
 AtomeManager.shared.canHandPaymentURL(url)
 ```
+
+## Note
+
+if your project is written by Objective-C, please create Bridging-Header.h
