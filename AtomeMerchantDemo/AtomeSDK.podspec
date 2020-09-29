@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name        = "AtomeSDK"
-  s.version     = "0.0.1"
+  s.version     = "1.0.1"
   s.summary     = "A SDK for Atome"
   s.homepage    = "https://github.com/Atome-FE/AtomeMerchantDemo-iOS"
   s.license     = { :type => "MIT" }
