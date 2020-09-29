@@ -188,7 +188,9 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import Foundation;
 @import ObjectiveC;
+@import UIKit;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -209,6 +211,10 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 SWIFT_CLASS("_TtC8AtomeSDK12AtomeManager")
 @interface AtomeManager : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AtomeManager * _Nonnull shared;)
++ (AtomeManager * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+- (void)handPaymentURL:(NSURL * _Nonnull)url options:(NSDictionary<UIApplicationOpenExternalURLOptionsKey, id> * _Nonnull)options completionHandler:(void (^ _Nullable)(BOOL))completion;
+- (BOOL)canHandPaymentURL:(NSURL * _Nonnull)url SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
