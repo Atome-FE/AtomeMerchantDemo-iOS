@@ -30,7 +30,8 @@ class ViewController: UIViewController {
     private func setupViews() {
         view.addSubview(textField)
         textField.placeholder = "Please input your custum URL"
-        textField.text = "https://appdemo.apaylater.net/"
+//        textField.text = "https://appdemo.apaylater.net/"
+        textField.text = "atomedemo://appdemo.apaylater.net/"
         textField.borderStyle = .roundedRect
         textField.snp.makeConstraints { (make) in
             make.leading.equalToSuperview().offset(30)
