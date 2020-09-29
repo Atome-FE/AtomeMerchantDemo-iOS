@@ -364,6 +364,7 @@
 				CODE_SIGN_ENTITLEMENTS = AtomeMerchantDemo/AtomeMerchantDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P948MCUQ2Y;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/AtomeMerchantDemo",
@@ -388,6 +389,7 @@
 				CODE_SIGN_ENTITLEMENTS = AtomeMerchantDemo/AtomeMerchantDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P948MCUQ2Y;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/AtomeMerchantDemo",
