@@ -3,7 +3,7 @@ Atome Merchant iOS Demo
 
 ## Integration
 
-#### CocoaPods (iOS 11+)
+#### CocoaPods (iOS 10+)
 
 You can use [CocoaPods](http://cocoapods.org/) to install `AtomeSDK` by adding it to your `Podfile`:
 
