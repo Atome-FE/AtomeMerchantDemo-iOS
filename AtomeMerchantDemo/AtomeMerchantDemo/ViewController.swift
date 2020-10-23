@@ -97,9 +97,13 @@ class ViewController: UIViewController {
             return
         }
         
-        if AtomeManager.shared.canHandPaymentURL(url) {
-            AtomeManager.shared.handPaymentURL(url)
+        if AtomeManager.shared.isAtomeInstalled() {
+            debugPrint("Atome already installed")
+        } else {
+            debugPrint("Atome not installed, please go to download")
         }
+        
+        AtomeManager.shared.handPaymentURL(url)
     }
 }
 

@@ -28,4 +28,8 @@ AtomeManager.shared.canHandPaymentURL(url)
 
 ## Note
 
-if your project is written by Objective-C, please create Bridging-Header.h
+1.if your project is written by Objective-C, please create Bridging-Header.h
+2.add Key:"Localization native development region" to your info.plist, type is "Array",add a string value "apaylater"
+
+eg.
+![image](image.png)

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name        = "AtomeSDK"
-  s.version     = "0.0.2"
+  s.version     = "0.0.3"
   s.summary     = "A SDK for Atome"
   s.homepage    = "https://github.com/Atome-FE/AtomeMerchantDemo-iOS"
   s.license     = { :type => "MIT" }
@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios
   s.requires_arc = true
   s.swift_version = "5.0"
-  s.ios.deployment_target = "11.0"
+  s.ios.deployment_target = "10.0"
   s.static_framework = true
   s.source   = { :git => "https://github.com/Atome-FE/AtomeMerchantDemo-iOS.git", :tag => s.version }
   s.source_files = "AtomeMerchantDemo/AtomeSDK.framework/Headers/*.{h}"
