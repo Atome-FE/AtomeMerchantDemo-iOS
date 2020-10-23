@@ -16,7 +16,7 @@ target 'YourApp' do
 end
 ```
 
-** add Key:"Localization native development region" to your info.plist, type is "Array",add a string value "apaylater" **
+**add Key:"Localization native development region" to your info.plist, type is "Array",add a string value "apaylater"**
 
 eg.
 ![image](image.png)
