@@ -4,8 +4,3 @@ framework module AtomeSDK {
   export *
   module * { export * }
 }
-
-module AtomeSDK.Swift {
-    header "AtomeSDK-Swift.h"
-    requires objc
-}

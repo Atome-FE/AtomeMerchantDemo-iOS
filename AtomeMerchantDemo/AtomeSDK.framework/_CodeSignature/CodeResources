@@ -4,281 +4,56 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Headers/AtomeSDK-Swift.h</key>
+		<key>Headers/AtomeManager.h</key>
 		<data>
-		XmWWmMtY3e/vEupf1Hzxc2ubkhE=
+		NXOvV4iwkSpGM2+oiaXoh+gwntM=
 		</data>
 		<key>Headers/AtomeSDK.h</key>
 		<data>
-		jw2QdjqqKf2qaJFFqz174vCw+MU=
+		Sx1FbxoWDxeM3I2jsMBAdj4NLs0=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		R1v058yvr6aWLloE/b6DjyFAUsY=
-		</data>
-		<key>Modules/AtomeSDK.swiftmodule/Project/arm.swiftsourceinfo</key>
-		<data>
-		0pi9+5PNDqBXpGxRvoFwE2Osy1w=
-		</data>
-		<key>Modules/AtomeSDK.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
-		<data>
-		y4cuMyz+r1xdgg1ukoIEgkTxGD0=
-		</data>
-		<key>Modules/AtomeSDK.swiftmodule/Project/arm64.swiftsourceinfo</key>
-		<data>
-		y4cuMyz+r1xdgg1ukoIEgkTxGD0=
-		</data>
-		<key>Modules/AtomeSDK.swiftmodule/Project/armv7-apple-ios.swiftsourceinfo</key>
-		<data>
-		0pi9+5PNDqBXpGxRvoFwE2Osy1w=
-		</data>
-		<key>Modules/AtomeSDK.swiftmodule/Project/armv7.swiftsourceinfo</key>
-		<data>
-		0pi9+5PNDqBXpGxRvoFwE2Osy1w=
-		</data>
-		<key>Modules/AtomeSDK.swiftmodule/arm.swiftdoc</key>
-		<data>
-		dI+vQ351zsdu4lc6X72uyoLygRs=
-		</data>
-		<key>Modules/AtomeSDK.swiftmodule/arm.swiftmodule</key>
-		<data>
-		09Wf62YBrjSAxsXJ8IOvzqy19Qg=
-		</data>
-		<key>Modules/AtomeSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
-		<data>
-		lsDtgndNV20dMtYXdPAj5AkRsFQ=
-		</data>
-		<key>Modules/AtomeSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
-		<data>
-		sTQ8sVoGA6GqwdH5mzK9hMf5wU4=
-		</data>
-		<key>Modules/AtomeSDK.swiftmodule/arm64.swiftdoc</key>
-		<data>
-		lsDtgndNV20dMtYXdPAj5AkRsFQ=
-		</data>
-		<key>Modules/AtomeSDK.swiftmodule/arm64.swiftmodule</key>
-		<data>
-		sTQ8sVoGA6GqwdH5mzK9hMf5wU4=
-		</data>
-		<key>Modules/AtomeSDK.swiftmodule/armv7-apple-ios.swiftdoc</key>
-		<data>
-		dI+vQ351zsdu4lc6X72uyoLygRs=
-		</data>
-		<key>Modules/AtomeSDK.swiftmodule/armv7-apple-ios.swiftmodule</key>
-		<data>
-		09Wf62YBrjSAxsXJ8IOvzqy19Qg=
-		</data>
-		<key>Modules/AtomeSDK.swiftmodule/armv7.swiftdoc</key>
-		<data>
-		dI+vQ351zsdu4lc6X72uyoLygRs=
-		</data>
-		<key>Modules/AtomeSDK.swiftmodule/armv7.swiftmodule</key>
-		<data>
-		09Wf62YBrjSAxsXJ8IOvzqy19Qg=
+		MJBwKrtjkoOuco6mX6ziD9p8BjI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		OcWdaEePk9ftb3KSvk68D4s4Qgs=
+		LV3xAYkbv5PIOSRNRDRpolPc7AA=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Headers/AtomeSDK-Swift.h</key>
+		<key>Headers/AtomeManager.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			XmWWmMtY3e/vEupf1Hzxc2ubkhE=
+			NXOvV4iwkSpGM2+oiaXoh+gwntM=
 			</data>
 			<key>hash2</key>
 			<data>
-			Qu7nRQ0npg9hkGoyCcJ27DnHLd6FdvdlqShdTfJ+5RY=
+			eOExJuqzfhVOxLPKRApRZC2yehDPIoAd7zs1bFAkC4M=
 			</data>
 		</dict>
 		<key>Headers/AtomeSDK.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			jw2QdjqqKf2qaJFFqz174vCw+MU=
+			Sx1FbxoWDxeM3I2jsMBAdj4NLs0=
 			</data>
 			<key>hash2</key>
 			<data>
-			N+2q6B63klxeMBdN11Yy68fUbb5GY5UTX7/KDhHAX/Y=
-			</data>
-		</dict>
-		<key>Modules/AtomeSDK.swiftmodule/Project/arm.swiftsourceinfo</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			0pi9+5PNDqBXpGxRvoFwE2Osy1w=
-			</data>
-			<key>hash2</key>
-			<data>
-			nvxWmR7HH0RydQaSHc8uPPd6qmoHwapXxhyf8S8kf9Y=
-			</data>
-		</dict>
-		<key>Modules/AtomeSDK.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			y4cuMyz+r1xdgg1ukoIEgkTxGD0=
-			</data>
-			<key>hash2</key>
-			<data>
-			oVgfTq4HjiFFwcsqS+0ns6jr7y9eKlVBYMT1OXStG4o=
-			</data>
-		</dict>
-		<key>Modules/AtomeSDK.swiftmodule/Project/arm64.swiftsourceinfo</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			y4cuMyz+r1xdgg1ukoIEgkTxGD0=
-			</data>
-			<key>hash2</key>
-			<data>
-			oVgfTq4HjiFFwcsqS+0ns6jr7y9eKlVBYMT1OXStG4o=
-			</data>
-		</dict>
-		<key>Modules/AtomeSDK.swiftmodule/Project/armv7-apple-ios.swiftsourceinfo</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			0pi9+5PNDqBXpGxRvoFwE2Osy1w=
-			</data>
-			<key>hash2</key>
-			<data>
-			nvxWmR7HH0RydQaSHc8uPPd6qmoHwapXxhyf8S8kf9Y=
-			</data>
-		</dict>
-		<key>Modules/AtomeSDK.swiftmodule/Project/armv7.swiftsourceinfo</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			0pi9+5PNDqBXpGxRvoFwE2Osy1w=
-			</data>
-			<key>hash2</key>
-			<data>
-			nvxWmR7HH0RydQaSHc8uPPd6qmoHwapXxhyf8S8kf9Y=
-			</data>
-		</dict>
-		<key>Modules/AtomeSDK.swiftmodule/arm.swiftdoc</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			dI+vQ351zsdu4lc6X72uyoLygRs=
-			</data>
-			<key>hash2</key>
-			<data>
-			GSm8fe4lBForYMJMYDxA67qD2R5WN858HVO9yYUOWqI=
-			</data>
-		</dict>
-		<key>Modules/AtomeSDK.swiftmodule/arm.swiftmodule</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			09Wf62YBrjSAxsXJ8IOvzqy19Qg=
-			</data>
-			<key>hash2</key>
-			<data>
-			MgvwiLHqL7IF3uRvvwEiadiLzucvoVOv5LeTFTouA3g=
-			</data>
-		</dict>
-		<key>Modules/AtomeSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			lsDtgndNV20dMtYXdPAj5AkRsFQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			TywhnkgFap7px7BVuCkq2aqJnuYpjcqV4MfUHk5F5FI=
-			</data>
-		</dict>
-		<key>Modules/AtomeSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			sTQ8sVoGA6GqwdH5mzK9hMf5wU4=
-			</data>
-			<key>hash2</key>
-			<data>
-			vZzBv3cfBMvvAofTPqCd3M+RG4LzkVKIQG0GhVn1esw=
-			</data>
-		</dict>
-		<key>Modules/AtomeSDK.swiftmodule/arm64.swiftdoc</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			lsDtgndNV20dMtYXdPAj5AkRsFQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			TywhnkgFap7px7BVuCkq2aqJnuYpjcqV4MfUHk5F5FI=
-			</data>
-		</dict>
-		<key>Modules/AtomeSDK.swiftmodule/arm64.swiftmodule</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			sTQ8sVoGA6GqwdH5mzK9hMf5wU4=
-			</data>
-			<key>hash2</key>
-			<data>
-			vZzBv3cfBMvvAofTPqCd3M+RG4LzkVKIQG0GhVn1esw=
-			</data>
-		</dict>
-		<key>Modules/AtomeSDK.swiftmodule/armv7-apple-ios.swiftdoc</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			dI+vQ351zsdu4lc6X72uyoLygRs=
-			</data>
-			<key>hash2</key>
-			<data>
-			GSm8fe4lBForYMJMYDxA67qD2R5WN858HVO9yYUOWqI=
-			</data>
-		</dict>
-		<key>Modules/AtomeSDK.swiftmodule/armv7-apple-ios.swiftmodule</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			09Wf62YBrjSAxsXJ8IOvzqy19Qg=
-			</data>
-			<key>hash2</key>
-			<data>
-			MgvwiLHqL7IF3uRvvwEiadiLzucvoVOv5LeTFTouA3g=
-			</data>
-		</dict>
-		<key>Modules/AtomeSDK.swiftmodule/armv7.swiftdoc</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			dI+vQ351zsdu4lc6X72uyoLygRs=
-			</data>
-			<key>hash2</key>
-			<data>
-			GSm8fe4lBForYMJMYDxA67qD2R5WN858HVO9yYUOWqI=
-			</data>
-		</dict>
-		<key>Modules/AtomeSDK.swiftmodule/armv7.swiftmodule</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			09Wf62YBrjSAxsXJ8IOvzqy19Qg=
-			</data>
-			<key>hash2</key>
-			<data>
-			MgvwiLHqL7IF3uRvvwEiadiLzucvoVOv5LeTFTouA3g=
+			YmCRXjeegte1o1E3/w6TV8ukhNAYs3P1gEJqRv+fE4c=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			OcWdaEePk9ftb3KSvk68D4s4Qgs=
+			LV3xAYkbv5PIOSRNRDRpolPc7AA=
 			</data>
 			<key>hash2</key>
 			<data>
-			BYiK4VOlzoq9F8UyCgvgrCGktDey+XMnxc9kIMrI5eA=
+			l6CVK4zvRqFmZuOVU+LUW/CVvJxY+hj9sKmFH1sf9x4=
 			</data>
 		</dict>
 	</dict>
