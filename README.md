@@ -25,11 +25,11 @@ eg.
 ## Usage
 
 ```swift
-AtomeManager.shared.handPaymentURL(url)
+AtomeManager.shared().handPaymentURL(url)
 ```
 
 ```swift
-if AtomeManager.shared.isAtomeInstalled() {
+if AtomeManager.shared().isAtomeInstalled() {
     debugPrint("Atome already installed")
 } else {
     debugPrint("Atome not installed, please go to download")
