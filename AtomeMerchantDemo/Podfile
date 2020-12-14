@@ -3,5 +3,6 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '11.0'
 
 target 'AtomeMerchantDemo' do
-
+  pod 'RxSwift', '6.0.0-rc.2'
+  pod 'RxCocoa', '6.0.0-rc.2'
 end

@@ -1,0 +1,6 @@
+module Pods_AtomeMerchantDemo {
+  umbrella header "Pods-AtomeMerchantDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
