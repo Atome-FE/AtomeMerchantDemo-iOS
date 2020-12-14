@@ -9,11 +9,17 @@
 import UIKit
 import SnapKit
 import AtomeSDK
+import RxSwift
+import RxCocoa
 
 let demoAmount: Int = 1234
 let demoCurrency: String = "SGD"
 
 class ViewController: UIViewController {
+    
+    private let disposeBag = DisposeBag()
+    private let statusBarBackgroundView = UIView()
+    private let topCoverView = ViewHeader()
     
     private let textField = UITextField()
     private let confirmOrderButton = CustumActionButton(title: "Confirm Order")
@@ -25,9 +31,24 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
+        setupAction()
     }
     
     private func setupViews() {
+        view.addSubview(statusBarBackgroundView)
+        statusBarBackgroundView.backgroundColor = UIColor.canary
+        statusBarBackgroundView.snp.makeConstraints { (make) in
+            make.leading.trailing.top.equalToSuperview()
+            make.bottom.equalTo(view.safeAreaLayoutGuide.snp.top)
+        }
+        
+        view.addSubview(topCoverView)
+        topCoverView.snp.makeConstraints { (make) in
+            make.top.equalTo(view.safeAreaLayoutGuide.snp.top)
+            make.leading.trailing.equalToSuperview()
+            make.height.equalTo(120)
+        }
+        
         view.addSubview(textField)
         textField.placeholder = "Please input your custum URL"
 //        textField.text = "https://appdemo.apaylater.net/"
@@ -36,24 +57,24 @@ class ViewController: UIViewController {
         textField.snp.makeConstraints { (make) in
             make.leading.equalToSuperview().offset(30)
             make.trailing.equalToSuperview().offset(-30)
-            make.top.equalToSuperview().offset(100)
+            make.top.equalTo(topCoverView.snp.bottom).offset(20)
             make.height.equalTo(45)
         }
-        
+
         view.addSubview(confirmOrderButton)
         confirmOrderButton.snp.makeConstraints { (make) in
             make.top.equalTo(textField.snp.bottom).offset(60)
             make.centerX.equalToSuperview()
             make.size.equalTo(CustumActionButton.size)
         }
-        
+
         view.addSubview(openAppButton)
         openAppButton.snp.makeConstraints { (make) in
             make.centerX.equalToSuperview()
             make.top.equalTo(confirmOrderButton.snp.bottom).offset(40)
             make.size.equalTo(CustumActionButton.size)
         }
-        
+
         view.addSubview(responseLabel)
         responseLabel.isEditable = false
         responseLabel.snp.makeConstraints { (make) in
@@ -62,9 +83,18 @@ class ViewController: UIViewController {
             make.top.equalTo(openAppButton.snp.bottom).offset(60)
             make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom).offset(-40)
         }
+    }
+    
+    private func setupAction() {
+        confirmOrderButton.rx.tap.subscribe(onNext: { [weak self] in
+            guard let self = self else { return }
+            self.confirmOrder()
+        }).disposed(by: disposeBag)
         
-        confirmOrderButton.addTarget(self, action: #selector(confirmOrder), for: .touchUpInside)
-        openAppButton.addTarget(self, action: #selector(openAtome), for: .touchUpInside)
+        openAppButton.rx.tap.subscribe(onNext: { [weak self] in
+            guard let self = self else { return }
+            self.openAtome()
+        }).disposed(by: disposeBag)
     }
     
     @objc func confirmOrder() {

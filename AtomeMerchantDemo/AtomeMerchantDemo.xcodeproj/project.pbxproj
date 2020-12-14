@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A23677FE258747B500E2C1E6 /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23677FD258747B500E2C1E6 /* ColorPalette.swift */; };
+		A236780125874CDB00E2C1E6 /* ViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A236780025874CDB00E2C1E6 /* ViewHeader.swift */; };
 		A29237E62510ABD2007770F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29237E52510ABD2007770F3 /* AppDelegate.swift */; };
 		A29237E82510ABD3007770F3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29237E72510ABD3007770F3 /* SceneDelegate.swift */; };
 		A29237EA2510ABD3007770F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29237E92510ABD3007770F3 /* ViewController.swift */; };
@@ -24,6 +26,8 @@
 		60A00AE61002FD00F602E065 /* Pods-AtomeMerchantDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AtomeMerchantDemo.debug.xcconfig"; path = "Target Support Files/Pods-AtomeMerchantDemo/Pods-AtomeMerchantDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		6C2621994DFDAE5E72260875 /* Pods-AtomeMerchantDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AtomeMerchantDemo.release.xcconfig"; path = "Target Support Files/Pods-AtomeMerchantDemo/Pods-AtomeMerchantDemo.release.xcconfig"; sourceTree = "<group>"; };
 		8ECE80E5BE60542C55F1D367 /* libPods-AtomeMerchantDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AtomeMerchantDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A23677FD258747B500E2C1E6 /* ColorPalette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
+		A236780025874CDB00E2C1E6 /* ViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHeader.swift; sourceTree = "<group>"; };
 		A29237E22510ABD2007770F3 /* AtomeMerchantDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AtomeMerchantDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A29237E52510ABD2007770F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A29237E72510ABD3007770F3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,8 +97,10 @@
 				A29237E52510ABD2007770F3 /* AppDelegate.swift */,
 				A29237E72510ABD3007770F3 /* SceneDelegate.swift */,
 				A29237E92510ABD3007770F3 /* ViewController.swift */,
+				A236780025874CDB00E2C1E6 /* ViewHeader.swift */,
 				A29238022511B5B4007770F3 /* ConfirmOrderRequest.swift */,
 				A29237FF2510B517007770F3 /* CustumActionButton.swift */,
+				A23677FD258747B500E2C1E6 /* ColorPalette.swift */,
 				A29237EB2510ABD3007770F3 /* Main.storyboard */,
 				A29237EE2510ABD5007770F3 /* Assets.xcassets */,
 				A29237F02510ABD5007770F3 /* LaunchScreen.storyboard */,
@@ -213,6 +219,8 @@
 				A29238002510B517007770F3 /* CustumActionButton.swift in Sources */,
 				A29237E82510ABD3007770F3 /* SceneDelegate.swift in Sources */,
 				A29238032511B5B4007770F3 /* ConfirmOrderRequest.swift in Sources */,
+				A23677FE258747B500E2C1E6 /* ColorPalette.swift in Sources */,
+				A236780125874CDB00E2C1E6 /* ViewHeader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
