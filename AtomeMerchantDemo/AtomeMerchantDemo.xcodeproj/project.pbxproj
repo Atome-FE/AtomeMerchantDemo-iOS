@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A22329672739028700E19785 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22329662739028700E19785 /* HomeViewController.swift */; };
+		A22329692739043900E19785 /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22329682739043900E19785 /* GradientButton.swift */; };
 		A23677FE258747B500E2C1E6 /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23677FD258747B500E2C1E6 /* ColorPalette.swift */; };
 		A236780125874CDB00E2C1E6 /* ViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A236780025874CDB00E2C1E6 /* ViewHeader.swift */; };
 		A29237E62510ABD2007770F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29237E52510ABD2007770F3 /* AppDelegate.swift */; };
@@ -16,8 +18,6 @@
 		A29237EF2510ABD5007770F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A29237EE2510ABD5007770F3 /* Assets.xcassets */; };
 		A29237F22510ABD5007770F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A29237F02510ABD5007770F3 /* LaunchScreen.storyboard */; };
 		A29237FB2510B165007770F3 /* NetworkRequester in Frameworks */ = {isa = PBXBuildFile; productRef = A29237FA2510B165007770F3 /* NetworkRequester */; };
-		A29237FE2510B3A5007770F3 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A29237FD2510B3A5007770F3 /* SnapKit */; };
-		A29238002510B517007770F3 /* CustumActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29237FF2510B517007770F3 /* CustumActionButton.swift */; };
 		A29238032511B5B4007770F3 /* ConfirmOrderRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29238022511B5B4007770F3 /* ConfirmOrderRequest.swift */; };
 		FDA8E8E68A63BB0A7268EBC5 /* libPods-AtomeMerchantDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ECE80E5BE60542C55F1D367 /* libPods-AtomeMerchantDemo.a */; };
 /* End PBXBuildFile section */
@@ -26,6 +26,8 @@
 		60A00AE61002FD00F602E065 /* Pods-AtomeMerchantDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AtomeMerchantDemo.debug.xcconfig"; path = "Target Support Files/Pods-AtomeMerchantDemo/Pods-AtomeMerchantDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		6C2621994DFDAE5E72260875 /* Pods-AtomeMerchantDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AtomeMerchantDemo.release.xcconfig"; path = "Target Support Files/Pods-AtomeMerchantDemo/Pods-AtomeMerchantDemo.release.xcconfig"; sourceTree = "<group>"; };
 		8ECE80E5BE60542C55F1D367 /* libPods-AtomeMerchantDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AtomeMerchantDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A22329662739028700E19785 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A22329682739043900E19785 /* GradientButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
 		A23677FD258747B500E2C1E6 /* ColorPalette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
 		A236780025874CDB00E2C1E6 /* ViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHeader.swift; sourceTree = "<group>"; };
 		A29237E22510ABD2007770F3 /* AtomeMerchantDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AtomeMerchantDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,7 +38,6 @@
 		A29237EE2510ABD5007770F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A29237F12510ABD5007770F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A29237F32510ABD5007770F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A29237FF2510B517007770F3 /* CustumActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustumActionButton.swift; sourceTree = "<group>"; };
 		A29238012510B750007770F3 /* AtomeMerchantDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AtomeMerchantDemo.entitlements; sourceTree = "<group>"; };
 		A29238022511B5B4007770F3 /* ConfirmOrderRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmOrderRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -47,7 +48,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A29237FB2510B165007770F3 /* NetworkRequester in Frameworks */,
-				A29237FE2510B3A5007770F3 /* SnapKit in Frameworks */,
 				FDA8E8E68A63BB0A7268EBC5 /* libPods-AtomeMerchantDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -97,9 +97,10 @@
 				A29237E52510ABD2007770F3 /* AppDelegate.swift */,
 				A29237E72510ABD3007770F3 /* SceneDelegate.swift */,
 				A29237E92510ABD3007770F3 /* ViewController.swift */,
+				A22329662739028700E19785 /* HomeViewController.swift */,
 				A236780025874CDB00E2C1E6 /* ViewHeader.swift */,
 				A29238022511B5B4007770F3 /* ConfirmOrderRequest.swift */,
-				A29237FF2510B517007770F3 /* CustumActionButton.swift */,
+				A22329682739043900E19785 /* GradientButton.swift */,
 				A23677FD258747B500E2C1E6 /* ColorPalette.swift */,
 				A29237EB2510ABD3007770F3 /* Main.storyboard */,
 				A29237EE2510ABD5007770F3 /* Assets.xcassets */,
@@ -120,6 +121,7 @@
 				A29237DE2510ABD2007770F3 /* Sources */,
 				A29237DF2510ABD2007770F3 /* Frameworks */,
 				A29237E02510ABD2007770F3 /* Resources */,
+				7265C7B3612FE9AF5495BF31 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -128,7 +130,6 @@
 			name = AtomeMerchantDemo;
 			packageProductDependencies = (
 				A29237FA2510B165007770F3 /* NetworkRequester */,
-				A29237FD2510B3A5007770F3 /* SnapKit */,
 			);
 			productName = AtomeMerchantDemo;
 			productReference = A29237E22510ABD2007770F3 /* AtomeMerchantDemo.app */;
@@ -160,7 +161,6 @@
 			mainGroup = A29237D92510ABD2007770F3;
 			packageReferences = (
 				A29237F92510B165007770F3 /* XCRemoteSwiftPackageReference "NetworkRequester" */,
-				A29237FC2510B3A5007770F3 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = A29237E32510ABD2007770F3 /* Products */;
 			projectDirPath = "";
@@ -185,6 +185,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		7265C7B3612FE9AF5495BF31 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AtomeMerchantDemo/Pods-AtomeMerchantDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AtomeMerchantDemo/Pods-AtomeMerchantDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AtomeMerchantDemo/Pods-AtomeMerchantDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		EB44576C3636D79A786C1AA8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -216,7 +233,8 @@
 			files = (
 				A29237EA2510ABD3007770F3 /* ViewController.swift in Sources */,
 				A29237E62510ABD2007770F3 /* AppDelegate.swift in Sources */,
-				A29238002510B517007770F3 /* CustumActionButton.swift in Sources */,
+				A22329672739028700E19785 /* HomeViewController.swift in Sources */,
+				A22329692739043900E19785 /* GradientButton.swift in Sources */,
 				A29237E82510ABD3007770F3 /* SceneDelegate.swift in Sources */,
 				A29238032511B5B4007770F3 /* ConfirmOrderRequest.swift in Sources */,
 				A23677FE258747B500E2C1E6 /* ColorPalette.swift in Sources */,
@@ -452,14 +470,6 @@
 				minimumVersion = 0.0.1;
 			};
 		};
-		A29237FC2510B3A5007770F3 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.1;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -467,11 +477,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A29237F92510B165007770F3 /* XCRemoteSwiftPackageReference "NetworkRequester" */;
 			productName = NetworkRequester;
-		};
-		A29237FD2510B3A5007770F3 /* SnapKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A29237FC2510B3A5007770F3 /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
