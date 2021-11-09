@@ -36,6 +36,8 @@ class ViewController: UIViewController {
     }
     
     private func setupViews() {
+        view.backgroundColor = UIColor.whiteTwo
+        
         view.addSubview(statusBarBackgroundView)
         statusBarBackgroundView.backgroundColor = UIColor.canary
         statusBarBackgroundView.snp.makeConstraints { (make) in
