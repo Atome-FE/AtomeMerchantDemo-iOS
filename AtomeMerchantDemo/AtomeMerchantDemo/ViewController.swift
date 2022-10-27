@@ -11,6 +11,7 @@ import SnapKit
 import AtomeSDK
 import RxSwift
 import RxCocoa
+import PKHUD
 
 let demoAmount: Int = 1234
 let demoCurrency: String = "SGD"
@@ -22,8 +23,8 @@ class ViewController: UIViewController {
     private let topCoverView = ViewHeader()
     
     private let textField = UITextField()
-    private let confirmOrderButton = CustumActionButton(title: "Confirm Order")
-    private let openAppButton = CustumActionButton(title: "Open Atome")
+    private let confirmOrderButton = GradientButton(title: "Confirm Order")
+    private let openAppButton = GradientButton(title: "Open Atome")
     private let responseLabel = UITextView()
     private let request = ConfirmOrderRequest()
     private var appPaymentUrl: String?
@@ -35,6 +36,8 @@ class ViewController: UIViewController {
     }
     
     private func setupViews() {
+        view.backgroundColor = UIColor.whiteTwo
+        
         view.addSubview(statusBarBackgroundView)
         statusBarBackgroundView.backgroundColor = UIColor.canary
         statusBarBackgroundView.snp.makeConstraints { (make) in
@@ -65,14 +68,14 @@ class ViewController: UIViewController {
         confirmOrderButton.snp.makeConstraints { (make) in
             make.top.equalTo(textField.snp.bottom).offset(60)
             make.centerX.equalToSuperview()
-            make.size.equalTo(CustumActionButton.size)
+            make.size.equalTo(GradientButton.buttonSize)
         }
 
         view.addSubview(openAppButton)
         openAppButton.snp.makeConstraints { (make) in
             make.centerX.equalToSuperview()
             make.top.equalTo(confirmOrderButton.snp.bottom).offset(40)
-            make.size.equalTo(CustumActionButton.size)
+            make.size.equalTo(GradientButton.buttonSize)
         }
 
         view.addSubview(responseLabel)
@@ -99,10 +102,10 @@ class ViewController: UIViewController {
     
     @objc func confirmOrder() {
         guard let url = textField.text else {
-            debugPrint("url cant be nil")
+            HUD.flash(.label("Url cant be nil!"), delay: 1)
             return
         }
-        
+        HUD.show(.progress)
         request.paymentResultUrl = url
         request.setCompletionBlock(success: { [weak self] (request) in
             guard let self = self else { return }
@@ -114,9 +117,10 @@ class ViewController: UIViewController {
                 return
             }
             self.appPaymentUrl = paymentURL
-            
+            HUD.hide(nil)
         }) { (request) in
             print(request.error as Any)
+            HUD.hide(nil)
         }
         request.start()
     }
@@ -124,6 +128,7 @@ class ViewController: UIViewController {
     @objc func openAtome() {
         guard let urlString = appPaymentUrl,
             let url = URL(string: urlString) else {
+            HUD.flash(.label("Cant open Atome app, Pls confirm order first!"), delay: 1)
             return
         }
         
