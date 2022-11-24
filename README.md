@@ -25,6 +25,7 @@ eg.
 ## Usage
 Swift
 ```swift
+// open an atome link to open atome app
 AtomeManager.shared().handPaymentURL(url)
 ```
 
@@ -37,6 +38,7 @@ if AtomeManager.shared().isAtomeInstalled() {
 ```
 Objective-C
 ```
+// open an atome link to open atome app
 [[AtomeManager sharedManager] handPaymentURL:url options:nil completionHandler:nil];
 ```
 
