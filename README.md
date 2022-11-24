@@ -23,7 +23,7 @@ eg.
 
 
 ## Usage
-
+Swift
 ```swift
 AtomeManager.shared().handPaymentURL(url)
 ```
@@ -35,6 +35,19 @@ if AtomeManager.shared().isAtomeInstalled() {
     debugPrint("Atome not installed, please go to download")
 }
 ```
+Objective-C
+```
+[[AtomeManager sharedManager] handPaymentURL:url options:nil completionHandler:nil];
+```
+
+```
+if ([[AtomeManager sharedManager] isAtomeInstalled]) {
+    NSLog(@"Atome already installed");
+} else {
+    NSLog(@"Atome not installed, please go to download");
+}
+```
+
 
 ## Note
 
