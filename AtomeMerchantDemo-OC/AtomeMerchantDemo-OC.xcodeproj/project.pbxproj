@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E486B962C93DEDC00341907 /* AtomeSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E486B952C93DEDC00341907 /* AtomeSDK.xcframework */; };
+		1E486B972C93DEDC00341907 /* AtomeSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1E486B952C93DEDC00341907 /* AtomeSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A28D4F87292F61C4003984F5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A28D4F86292F61C4003984F5 /* AppDelegate.m */; };
 		A28D4F8A292F61C4003984F5 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A28D4F89292F61C4003984F5 /* SceneDelegate.m */; };
 		A28D4F8D292F61C4003984F5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A28D4F8C292F61C4003984F5 /* ViewController.m */; };
@@ -17,7 +19,6 @@
 		A28D4FA2292F61C5003984F5 /* AtomeMerchantDemo_OCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A28D4FA1292F61C5003984F5 /* AtomeMerchantDemo_OCTests.m */; };
 		A28D4FAC292F61C5003984F5 /* AtomeMerchantDemo_OCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A28D4FAB292F61C5003984F5 /* AtomeMerchantDemo_OCUITests.m */; };
 		A28D4FAE292F61C5003984F5 /* AtomeMerchantDemo_OCUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A28D4FAD292F61C5003984F5 /* AtomeMerchantDemo_OCUITestsLaunchTests.m */; };
-		A28D4FC0292F627D003984F5 /* AtomeSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A28D4FBF292F627D003984F5 /* AtomeSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +38,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		1E486B982C93DEDC00341907 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1E486B972C93DEDC00341907 /* AtomeSDK.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1E486B952C93DEDC00341907 /* AtomeSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AtomeSDK.xcframework; sourceTree = "<group>"; };
 		A28D4F82292F61C4003984F5 /* AtomeMerchantDemo-OC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AtomeMerchantDemo-OC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A28D4F85292F61C4003984F5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A28D4F86292F61C4003984F5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -64,7 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A28D4FC0292F627D003984F5 /* AtomeSDK.framework in Frameworks */,
+				1E486B962C93DEDC00341907 /* AtomeSDK.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +160,7 @@
 		A28D4FBA292F61FC003984F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1E486B952C93DEDC00341907 /* AtomeSDK.xcframework */,
 				A28D4FBF292F627D003984F5 /* AtomeSDK.framework */,
 				A28D4FBB292F61FC003984F5 /* AtomeSDK.framework */,
 			);
@@ -160,6 +177,7 @@
 				A28D4F7E292F61C4003984F5 /* Sources */,
 				A28D4F7F292F61C4003984F5 /* Frameworks */,
 				A28D4F80292F61C4003984F5 /* Resources */,
+				1E486B982C93DEDC00341907 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

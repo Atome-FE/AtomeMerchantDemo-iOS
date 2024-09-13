@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E486B9A2C93DFB200341907 /* AtomeSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E486B992C93DFB200341907 /* AtomeSDK.xcframework */; };
+		1E486B9B2C93DFB200341907 /* AtomeSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1E486B992C93DFB200341907 /* AtomeSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A22329672739028700E19785 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22329662739028700E19785 /* HomeViewController.swift */; };
 		A22329692739043900E19785 /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22329682739043900E19785 /* GradientButton.swift */; };
 		A23677FE258747B500E2C1E6 /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23677FD258747B500E2C1E6 /* ColorPalette.swift */; };
@@ -23,7 +25,22 @@
 		FDA8E8E68A63BB0A7268EBC5 /* libPods-AtomeMerchantDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ECE80E5BE60542C55F1D367 /* libPods-AtomeMerchantDemo.a */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		1E486B9C2C93DFB200341907 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1E486B9B2C93DFB200341907 /* AtomeSDK.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1E486B992C93DFB200341907 /* AtomeSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AtomeSDK.xcframework; sourceTree = "<group>"; };
 		60A00AE61002FD00F602E065 /* Pods-AtomeMerchantDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AtomeMerchantDemo.debug.xcconfig"; path = "Target Support Files/Pods-AtomeMerchantDemo/Pods-AtomeMerchantDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		6C2621994DFDAE5E72260875 /* Pods-AtomeMerchantDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AtomeMerchantDemo.release.xcconfig"; path = "Target Support Files/Pods-AtomeMerchantDemo/Pods-AtomeMerchantDemo.release.xcconfig"; sourceTree = "<group>"; };
 		8ECE80E5BE60542C55F1D367 /* libPods-AtomeMerchantDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AtomeMerchantDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E486B9A2C93DFB200341907 /* AtomeSDK.xcframework in Frameworks */,
 				A29237FB2510B165007770F3 /* NetworkRequester in Frameworks */,
 				FDA8E8E68A63BB0A7268EBC5 /* libPods-AtomeMerchantDemo.a in Frameworks */,
 			);
@@ -60,6 +78,7 @@
 		1CCE3B1A2E166406DEB0FF5A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1E486B992C93DFB200341907 /* AtomeSDK.xcframework */,
 				8ECE80E5BE60542C55F1D367 /* libPods-AtomeMerchantDemo.a */,
 			);
 			name = Frameworks;
@@ -133,6 +152,7 @@
 				A29237DF2510ABD2007770F3 /* Frameworks */,
 				A29237E02510ABD2007770F3 /* Resources */,
 				7265C7B3612FE9AF5495BF31 /* [CP] Copy Pods Resources */,
+				1E486B9C2C93DFB200341907 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -392,7 +412,7 @@
 				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = P948MCUQ2Y;
 				ENABLE_BITCODE = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/AtomeMerchantDemo",
@@ -423,7 +443,7 @@
 				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = P948MCUQ2Y;
 				ENABLE_BITCODE = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/AtomeMerchantDemo",
