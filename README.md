@@ -21,6 +21,34 @@ end
 eg.
 ![image](image.png)
 
+#### Swift Package Manager (iOS 10+)
+
+You can also use [Swift Package Manager](https://www.swift.org/documentation/package-manager/) to install `AtomeSDK` (version `0.1.2`).
+
+In Xcode, go to **File > Add Package Dependencies...**, enter the repository URL below, and set the dependency rule to **Exact Version** `0.1.2`:
+
+```
+https://github.com/Atome-FE/AtomeMerchantDemo-iOS.git
+```
+
+Or, if you manage dependencies in a `Package.swift` manifest, add the following:
+
+```swift
+dependencies: [
+    .package(url: "https://github.com/Atome-FE/AtomeMerchantDemo-iOS.git", exact: "0.1.2")
+],
+targets: [
+    .target(
+        name: "YourTarget",
+        dependencies: [
+            .product(name: "AtomeSDK", package: "AtomeMerchantDemo-iOS")
+        ]
+    )
+]
+```
+
+Remember to complete the **Queried URL Schemes** step above (add `apaylater` to your `Info.plist`) when using Swift Package Manager as well.
+
 
 ## Usage
 Swift
